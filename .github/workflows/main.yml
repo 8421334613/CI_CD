@@ -8,11 +8,17 @@ on:
 jobs:
     extract-data-job:
         runs-on: ubuntu-latest
+
         steps:
+
         - name: Checkout code
           uses: actions/checkout@v2
+
         - name: Run extract.py
           run: python extract.py
+
+        - name: download dependencies
+          run: pip install pandas
 
     transform-data-job:
 
