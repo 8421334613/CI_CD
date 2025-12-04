@@ -1,0 +1,1 @@
+print("load the data in data warehouse")
